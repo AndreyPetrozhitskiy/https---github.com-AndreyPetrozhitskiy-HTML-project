@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СитиПро</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="./image/favicon.png"><!--Favicon-->
+    <!--CSS-->
+    <link rel="stylesheet" href="./fonts/fonts.css"> <!--Шрифт-->
+    <link rel="stylesheet" href="./css/main.css"> <!-- Основной CSS  -->
+    <link rel="stylesheet" href="./css/adaptiv.css"><!--Мобильная версия сайта  -->
+    <link rel="stylesheet" href="./css/media.css"> <!-- Медиа запросы CSS -->
+    <link rel="stylesheet" href="./css/modal.css"> <!-- Модальные окна CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> <!--Bootstrap  -->
+</head>
+<body>
+    
+     <div class="containers">
+        <div class="containers__one-block">
+            <!-- Круги -->
+            
+                    <!--Шапка  -->
+            <header>
+                <div class="header__menu">
+                    <div class="item__logo">
+                        <img class="header__logo-png" src="./image/one-block/header/header-logo.png" alt="">
+                    </div>
+                    <div class="item__menu">
+                        <a href="#two-block">О нас</a>
+                        <a href="#four-block">Виды услуг</a>
+                        <a href="#six-block">Портфолио</a>
+                        <a href="#seven-block">Оставьте заявку</a>
+                        <a href="#eight-block">Контакты</a>
+                    </div>
+                    <div class="item__phone">
+                        <img class="header__tel-png" src="./image/one-block/header/header-tel.svg" alt="">
+                        <a href="tel:+79000000000">+7 900 000 00 00</a>
+                    </div>
+                </div>
+            </header>
+           
+            <!-- Слайдер -->
+            <div class="header__slider">
+                <!-- Слайдер Bootstrap -->
+                <div id="carouselHeader" class="carousel slide" data-bs-ride="carousel">
+                    <img class="containers__top-img" src="./image/one-block/montage.png" alt="">
+                    <div class="carousel-indicators" style="z-index: 5; justify-content: flex-start; position: relative;
+                    width: 1170px;
+                    margin: 0 auto;">
+                    
+                    <p style="font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 22px;left: 80px;
+                    position: absolute;">01</p>
+                      <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="width: 51px;height: 4px;margin-left: 126px;"></button>
+                      <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="1" aria-label="Slide 2" style="width: 51px;height: 4px;"></button>
+                      <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="2" aria-label="Slide 3" style="width: 51px;height: 4px;"></button>
+                      <p style="font-family: 'Gilroy';
+                      font-style: normal;
+                      font-weight: 700;
+                      font-size: 18px;
+                      line-height: 22px;position: absolute;
+                      left: 310px;">03</p>
+                    </div>
+
+                    <div class="carousel-inner" style="overflow: inherit !important;">
+                        
+                      <div class="carousel-item active" style="z-index: unset;" data-bs-interval="100000000" >
+                        <div class="one__slide">
+                            <img class="slide-img" src="./image/one-block/one-slide.png" alt="">
+                            <img class="slide-imgRectangle" src="./image/one-block/Rectangle 73.png" alt="">
+                            <div class="slide__text">
+                                <p  class="text">Реставрация <br> лакокрасочного <br>  покрытия</p>
+                            </div>
+                            <div class="img__krug" style="
+                            top: -620px !important;">
+                                <img style="left: 610px !important;" class="img__krug-img" src="./image/one-block/man.png" alt="">
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item " style="z-index: unset;" data-bs-interval="100000000">
+                        <div class="two__slide">
+                            <img class="slide-img" src="./image/one-block/two-slide.png" alt="">
+                            <img class="slide-imgRectangle" src="./image/one-block/Rectangle 73.png" alt="">
+                            <div class="slide__text">
+                                <p class="text" >Профессиональная <br> окраска <br> интерьера</p>
+                            </div>
+                            <div class="img__krug">
+                                <img class="img__krug-img" src="./image/one-block/man2.png" alt="">
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" style="z-index: unset;" data-bs-interval="100000000">
+                        <div class="three__slide">
+                            <img class="slide-img" src="./image/one-block/three-slide.png" alt="">
+                            <img class="slide-imgRectangle" src="./image/one-block/Rectangle 73.png" alt="">
+                            <div class="slide__text">
+                                <p class="text" >Профессиональная<br> окраска<br> экстерьера</p>
+                            </div>
+                            <div class="img__krug">
+                                <img class="img__krug-img" src="./image/one-block/man3.png" alt="">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+            <!-- Кнопка -->
+            <div class="slider__button">
+                <input class="slide_btn" type="button" value="Получить консультацию" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            </div>
+            </div>
+        </div>
+        <!-- Конец первого блока -->
+        <!-- 2 блок -->
+        <div class="containers__two-block" id="two-block">
+            <div class="containers__two-block_body">
+                <div class="containers__two-block_body-one">
+                    <div class="container__h1">
+                        <p class="container__h1-p">О нас</p>
+                    </div>
+                </div>
+
+                <div class="containers__two-block_body-two">
+                    <div class="one__block">
+                        <div class="one__block--h1">
+                            <p>Сплочённость команды профессионалов позволила расправить крылья</p>
+                        </div>
+                        <div class="one__block--nav">
+                            <nav>
+                                Противоположная точка зрения подразумевает, что интерактивные прототипы, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.
+                                <br><br>
+                                В частности, перспективное планирование предопределяет высокую востребованность инновационных методов управления процессами.
+                                <br><br>
+                                А ещё ключевые особенности структуры проекта представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть подвергнуты целой серии независимых исследований.
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="two__block">
+                        <img class="two__block--img" src="./image/two-block/block2photo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Конец 2 блока -->
+        <!-- 3 блок -->
+        <div class="containers__three-block" id="three-block">
+            <div class="containers__three-block__item">
+                <img src="./image/three-block/1znak.png" alt="" style="width: 63px;height: 63px;">
+                <p>Гарантия на все виды работ</p>
+            </div>
+            <div class="containers__three-block__item">
+                <img src="./image/three-block/2znak.png" alt="" style="width: 65px;height: 63px;">
+                <p>В работе используются материалы <br> от ведущих европейских<br> производителей</p>
+            </div>
+            <div class="containers__three-block__item">
+                <img src="./image/three-block/3znak.png" alt="" style="width: 70px;height: 53px;">
+                <p>Высококвалифицированный<br>
+                    персонал</p>
+            </div>
+            <div class="containers__three-block__item">
+                <img src="./image/three-block/4znak.png" alt="" style="width: 58px;height: 58px;">
+                <p>Своя лаборатория цветоподбора</p>
+            </div>
+        </div>
+        <!-- Конец 3 блока  -->
+        <!-- 4 блок  -->
+        <div class="containers__four-block" id="four-block">
+            <img src="./image/four-block/3block.png" alt="" class="containers__four-block-img">
+            <div class="containers__four-block__body">
+                <div class="containers__four-block__body-h1">
+                    <p>Виды услуг</p>
+                </div>
+                <div class="containers__four-block__body-card">
+                    <div class="card1 ">
+                        <div class="cardBack">
+                            <div class="cardo">
+                                <div class="card_icon"><img  src="./image/four-block/cards/photocard1.png" alt=""></div>
+                                <div class="cardText">
+                                    Реставрация <br>
+                                    лакокрасочного<br>
+                                    покрытия
+                                </div> 
+                                <div class="cardStrelka"></div>
+                            </div>
+                        </div>
+                        <a href="#"><div class="card--hover" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                            <p class="card--hover-text">Получить<br>консультацию</p>
+                            <div class="card--hover-strelka"></div>
+                        </div></a>
+                    </div>
+                    <div class="card2 ">
+                        <div class="cardBack">
+                            <div class="cardo">
+                                <div class="card_icon"><img src="./image/four-block/cards/photocard2.png" alt=""></div>
+                                <div class="cardText">
+                                    Профессиональная <br>
+                                    окраска<br>
+                                    на объекте
+                                </div> 
+                                <div class="cardStrelka"></div>
+                            </div>
+                        </div>
+                        <a href="#"><div class="card--hover" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                            <p class="card--hover-text">Получить<br>консультацию</p>
+                            <div class="card--hover-strelka"></div>
+                        </div></a>
+                    </div>
+                    <div class="card3 ">
+                        <div class="cardBack">
+                            <div class="cardo">
+                                <div class="card_icon"><img src="./image/four-block/cards/photocard3.png" alt=""></div>
+                                <div class="cardText">
+                                    Профессиональная<br>
+                                    окраска<br>
+                                    экстерьера
+                                </div> 
+                                <div class="cardStrelka"></div>
+                            </div>
+                        </div>
+                        <a href="#"><div class="card--hover" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                            <p class="card--hover-text">Получить<br>консультацию</p>
+                            <div class="card--hover-strelka"></div>
+                        </div></a>
+                    </div>
+                    <div class="card4 ">
+                        <div class="cardBack">
+                            <div class="cardo">
+                                <div class="card_icon"><img src="./image/four-block/cards/photocard4.png" alt=""></div>
+                                <div class="cardText">
+                                    Профессиональная<br>
+                                    окраска ограждений<br>
+                                    и витражей
+                                </div> 
+                                <div class="cardStrelka"></div>
+                            </div>
+                        </div>
+                        <a href="#"><div class="card--hover" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                            <p class="card--hover-text">Получить<br>консультацию</p>
+                            <div class="card--hover-strelka"></div>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Конец 4 блока -->
+        <!-- 5 блок -->
+        <div class="containers__five-block" id="five-block">
+            <div class="containers__five-block-h1">
+                <p>Нам доверяют</p>
+            </div>
+            <div class="containers__five-block-body">
+                <div class="containers__five-block-card"><img src="./image/five-block/fond.png" alt=""></div>
+                <div class="containers__five-block-card"><img src="./image/five-block/rzd.png" alt=""></div>
+                <div class="containers__five-block-card"><img src="./image/five-block/ask.png" alt=""></div>
+            </div>
+        </div>
+        <!-- Конец 5 блока -->
+        <!-- 6 блок -->
+        <div class="containers__six-block" id="six-block">
+            <img class="containers__six-block-fonImg" src="./image/six-block/fon.png" alt="">
+            <div class="containers__six-block-body">
+                <div class="containers__six-block-h1">
+                    <p>ПОРТФОЛИО<br>
+                        работ</p> 
+                </div>
+                <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel" style="
+                margin-top: 3%;
+            ">
+                    <div class="carousel-inner" style="overflow: visible;">
+                      <div class="carousel-item">
+                            <h1 class="body_five_block_one-block_h1">Kazakov Grand Loft</h1>
+                            <p class="body_five_block_one-block_p">Kazakov Grand Loft — новый проект в исторической части Москвы, дом для тех, кто не идет на компромиссы. Все, на что город будет равняться в обозримой перспективе, находится здесь. И в центре этого мира вы. Индивидуальность даже в мелочах и комфорт, возведенный в абсолют — чем не рецепт совершенства?<br><br>
+            
+                                Проект прогрессивной авторской архитектуры, умного наполнения и персональных панорамных видов на город. Здесь созданы условия премиального сервиса, чтобы вы не отвлекались на бытовые мелочи, а просто наслаждались жизнью.</p>
+                            <img class="body_five_block_one-block_img" src="./image/six-block/fiviblockimg1.png" alt="">
+                            <img class="body_five_block_one-block_img_2" src="./image/six-block/13.png" alt="">
+                      </div>
+                      <div class="carousel-item active">
+                            <h1 class="body_five_block_two-block_h1">Новое здание Третьяковской <br> галереи</h1>
+                            <p class="body_five_block_two-block_p">Третьяковская галерея на Кадашёвской<br>
+                                 набережной — строящийся новый корпус <br>
+                                  Третьяковской галереи, расположенный<br>
+                                на Кадашёвской набережной, 10 — рядом<br>
+                                с историческими зданиями музея в Лаврушинском переулке.<br><br>
+                                
+                                Новый музейный корпус спроектирован <br>
+                                «Моспроектом-4» и дополнен конкурсным<br>
+                                 проектом фасадов от архитектурного бюро SPEECH.<br><br>
+                                
+                                Строительство началось летом 2014 года,<br>
+                                 завершение работ запланировано на 2024 год.</p>
+                            <img class="body_five_block_two-block_img" src="./image/six-block/fiveblockimg2.png" alt="">
+                            <img class="body_five_block_two-block_img_2" src="./image/six-block/23.png" alt="">
+                      </div>
+                      <div class="carousel-item">
+                            <h1 class="body_five_block_three-block_h1">ТРЦ Павелецкая Плаза</h1>
+                            <p class="body_five_block_three-block_p">ТРЦ «Павелецкая Плаза» расположится <br>
+                                в историческом центре Москвы, на первой линии<br>
+                                 Садового кольца, на площади перед Павелецким<br>
+                                  вокзалом. Торговый центр будет соединен<br>
+                                   подземным переходом через Садовое кольцо с <br>
+                                    радиальной станцией метро «Павелецкая», а также <br>
+                                    одноименным ТПУ, который свяжет транспортные<br>
+                                     артерии города с аэропортом «Домодедово».<br><br>
+                                
+                                Ежедневный пассажиропоток через станции метро<br>
+                                 и наземный транспорт составляет около 300 тыс.<br>
+                                  человек. В зоне охвата торгового центра живут и
+                                  <br> работают более 3 млн человек.</p>
+                            <img class="body_five_block_three-block_img" src="./image/six-block/fiveblockimg3.png" alt="">
+                            <img class="body_five_block_three-block_img_2" src="./image/six-block/33.png" alt="">
+                      </div>
+                    </div>
+                      <img class="body_five_block_strelki_left" src="./image/six-block/strelkalevo.png" data-bs-target="#carouselExampleAutoplaying" alt="" data-bs-slide="prev">
+                      <img class="body_five_block_strelki_right" src="./image/six-block/strelkapravo.png" data-bs-target="#carouselExampleAutoplaying" alt="" data-bs-slide="next">
+                  </div>
+            </div>
+        </div>
+        <!-- Конец 6 блока -->
+        <!-- 7 блок -->
+        <div class="containers__seven-block" id="seven-block">
+            <img class="containers__seven-block-fonImg" src="./image/seven-block/fon.png" alt="">
+            <div class="containers__seven-block-body">
+                <p class="containers__seven-block-h1">Оставьте <br> заявку</p>
+                <div class="containers__seven-block-body-form">
+                    <input type="text" name="Ваше имя" placeholder="Ваше имя">
+                    <input type="tel" name="" placeholder="Номер телефона*">
+                </div>
+                <div class="containers__seven-block-body-form-textarea">
+                    <textarea name="" id="" placeholder="Ваше сообщение"></textarea>
+                </div>
+                <div class="containers__seven-block-body-checkbox">
+                    <input name="cssCheckbox1" id="demo_opt_1" type="checkbox" class="css-checkbox1">
+                    <label for="demo_opt_1"></label>
+                    <p>Нажимая кнопку «ОТПРАВИТЬ» вы соглашаетесь на обработку ваших данных</p>
+                </div>
+                <div class="containers__seven-block-body-button">
+                    <input type="button" value="Отправить">
+                </div>
+            </div> 
+        </div>
+        <!-- Конец 7 блока -->
+        <!-- 8 блок -->
+        <div class="containers__eight-block" id="eight-block">
+            <div class="containers__eight-block-body">
+                <div class="containers__eight-block-body--one-block">
+                    <div class="containers__eight-block-body--one-block-contact-h1">
+                        <h1>Контакты</h1>
+                    </div>
+                    <div class="containers__eight-block-body--one-block-contact">
+                        <div class="block-contact-item">
+                            <img src="./image/eight-block/tochka.svg" alt="">
+                            <h1>г. Москва</h1>
+                            <div class="block-contact-item-p">
+                                <p>ул. Московская д.0</p>
+                            </div>
+                        </div>
+                        <div class="block-contact-item">
+                            <img src="./image/eight-block/tel.svg" alt="">
+                            <h1>+7 900 000 00 00</h1>
+                            <div class="block-contact-item-p">
+                                <p style="text-decoration: underline;cursor: pointer;"data-bs-toggle="modal" data-bs-target="#exampleModal">заказать звонок</p>
+                            </div>
+                        </div>
+                        <div class="block-contact-item">
+                            <img src="./image/eight-block/clock.svg" alt="">
+                            <h1>Пн-Вс 9:00-20:00</h1>
+                            <div class="block-contact-item-p">
+                                <p>без выходных</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containers__eight-block-body--one-block-soc">
+                        <a href=""><img style="margin-left: 35px;" src="./image/eight-block/vk.png" alt=""></a>
+                        <a href=""><img src="./image/eight-block/tg.png" alt=""></a>
+                        <a href=""><img src="./image/eight-block/wt.png" alt=""></a>
+                        <a href=""><img src="./image/eight-block/vb.png" alt=""></a>                   
+                    </div>
+                    <div class="containers__eight-block-body-politica">
+                        <a href="./politica.html"><p >Политика конфиденциальности</p></a>
+                    </div>
+                </div>
+                <div class="containers__eight-block-body--two-block">
+                    <iframe class="body_seeven_block_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9795.235651383882!2d131.90122316131524!3d43.122564476177615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb392110c195f89%3A0x2ff2f6c519c723fc!2z0KTQk9CR0J7QoyDQktCeICLQktC70LDQtNC40LLQvtGB0YLQvtC60YHQutC40Lkg0LPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INGD0L3QuNCy0LXRgNGB0LjRgtC10YIg0Y3QutC-0L3QvtC80LjQutC4INC4INGB0LXRgNCy0LjRgdCwIg!5e0!3m2!1sru!2sru!4v1682514447087!5m2!1sru!2sru" width="730" height="370" style="border:15px;position: absolute;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+                
+            </div>
+        </div>
+        <!-- Конец 8 блока -->
+        <footer>
+            <div class="footer-body">
+                <div class="footer-body-item-one">
+                    <img src="./image/footer/logofooter.png" alt="">
+                    <span>
+                        Реставрация (восстановление) лакокрасочного<br>  покрытия на объекте (окна, двери),<br>  профессиональная окраска на объекте (окна,<br>  двери, предметы интерьера и экстерьера, <br> ограждения, витражи и т.д.)
+                    </span>
+                    <p>СитиПро 2023</p>
+                </div>
+                <div class="footer-body-item-two">
+                    <div class="footer-body-item-two-menu">
+                        <a href="#two-block">О нас</a>
+                        <a href="#four-block">Виды услуг</a>
+                        <a href="#six-block">Портфолио</a>
+                        <a href="#seven-block">Оставьте заявку</a>
+                        <a href="#eight-block">Контакты</a>
+                    </div>
+                    <div class="footer-body-item-two-politica">
+                        <a href="./politica.html">Политика конфиденциальности</a>
+                    </div>
+                    <div class="footer-body-item-two-img">
+                        <img src="./image/footer/razrabot.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-body-item-three">
+                    <div class="containers__eight-block-body--one-block-contact" style="margin-top: 0;justify-content: flex-start;">
+                        <div class="block-contact-item">
+                            <img src="./image/eight-block/tochka.svg" alt="">
+                            <h1>г. Москва</h1>
+                            <div class="block-contact-item-p">
+                                <p>ул. Московская д.0</p>
+                            </div>
+                        </div>
+                        <div class="block-contact-item">
+                            <img src="./image/eight-block/tel.svg" alt="">
+                            <h1>+7 900 000 00 00</h1>
+                            <div class="block-contact-item-p">
+                                <p style="text-decoration: underline;cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">заказать звонок</p>
+                            </div>
+                        </div>
+                        <div class="block-contact-item">
+                            <img src="./image/eight-block/clock.svg" alt="">
+                            <h1>Пн-Вс 9:00-20:00</h1>
+                            <div class="block-contact-item-p">
+                                <p>без выходных</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-body-item-three-soc">
+                        <a href="" ><img src="./image/eight-block/vk.png" alt=""></a>
+                        <a href="" ><img src="./image/eight-block/tg.png" alt=""></a>
+                        <a href="" ><img src="./image/eight-block/wt.png" alt=""></a>
+                        <a href=""><img src="./image/eight-block/vb.png" alt=""></a>   
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- Модальное окно -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog">
+          <div class="modal-content modal_window">
+            <div class="modal-header">
+              <img src="./image/modal/logo.png" alt="" class="modal-logo">
+              <img class="modal_window_header_krest" data-bs-dismiss="modal" aria-label="Закрыть" src="./image/modal/krest.png">
+            </div>
+            <div class="modal-body">
+                <p class="modal_window_body_text_one">Оставьте заявку</p>
+                <input class="modal_window_body_input_text" type="text" placeholder="Ваше имя">
+                <input class="modal_window_body_input_tel" type="tel" placeholder="Номер телефона*">
+                <p class="modal_window_body_text_two">И наш менеджер свяжется с вами <br>
+                    в ближайшее время <br>
+                    для уточнения<br>
+                    деталей</p>
+                <textarea class="modal_window_body_input_bigtext" type="text" placeholder="Ваше сообщение"></textarea>
+                <div  class="modal_window_body_checkbox">
+                        <input name="cssCheckbox1" id="demo_opt_2" type="checkbox" class="css-checkbox1">
+                        <label for="demo_opt_2"></label>
+                </div>
+                <p class="modal_window_body_three">Нажимая кнопку «ОТПРАВИТЬ» вы соглашаетесь на обработку ваших данных</p>
+                <input class="modal_window_body_input_button" type="button" value="Отправить">
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+     <!-- Adaptiv version -->
+     <div class="containers-adaptiv">
+        <div class="containers-adaptiv__one-block">
+            <div class="adaptiv_header">
+                <img class="adaptiv_header_logo" src="./image/adaptiv/one-block/header/logofooter.png" alt="">
+                <img class="adaptiv_header_borger" src="./image/adaptiv/one-block/header/borger.png" alt="" >
+                <img class="adaptiv_header_krest" src="./image/adaptiv/one-block/header/krest.png" alt="" >
+                <div class="adaptiv_header-block">
+                    <div class="adaptiv_header-block-one">
+                        <a href="#twoblockadaptiv">О нас</a>
+                        <a href="#fourblockadaptiv">Виды услуг</a>
+                        <a href="#sixblockadaptiv">Портфолио</a>
+                        <a href="#sevenblockadaptiv">Оставьте заявку</a>
+                        <a href="#eathblockadaptiv">Контакты</a>                        
+                    </div>
+                    <div class="adaptiv_header-block-two">
+                        <a href=""><img class="adaptiv_header-block-two-img" src="./image/adaptiv/one-block/header/vk.png" alt=""></a>
+                        <a href=""><img class="adaptiv_header-block-two-img" src="./image/adaptiv/one-block/header/tg.png" alt=""></a>
+                        <a href=""><img class="adaptiv_header-block-two-img" src="./image/adaptiv/one-block/header/wt.png" alt=""></a>
+                        <a href=""><img class="adaptiv_header-block-two-img" src="./image/adaptiv/one-block/header/vb.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="adaptiv_slider">
+                <img class="adaptiv_slider-krug1" src="./image/adaptiv/one-block/colco2.png" alt="">
+                <img class="adaptiv_slider-krug2" src="./image/adaptiv/one-block/colco1.png" alt="">
+                <img class="adaptiv_slider-krug3" src="./image/adaptiv/one-block/colco3.png" alt="">
+                <div id="adaptivSliderHeader" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel__indicators-adaptive">
+                        <div class="carousel-indicators carousel__indicators-adaptive-button" >
+                            <button style="width: 51px;height: 4px;" type="button" data-bs-target="#adaptivSliderHeader" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button style="width: 51px;height: 4px;" type="button" data-bs-target="#adaptivSliderHeader" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button style="width: 51px;height: 4px;" type="button" data-bs-target="#adaptivSliderHeader" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000" >
+                            <img class="carousel_item_img1" src="./image/adaptiv/one-block/img1.png" alt="">
+                            <p class="carousel-item-text1">Реставрация <br> лакокрасочного<br> покрытия</p>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img class="carousel_item_img2"src="./image/adaptiv/one-block/img2.png" alt="">
+                        <p class="carousel-item-text1">Профессиональная <br>окраска интерьера</p>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img class="carousel_item_img3"src="./image/adaptiv/one-block/img3.png" alt="">
+                        <p class="carousel-item-text1">Профессиональная<br> окраска экстерьера</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="number-adaptiv">            
+                <p>01</p>
+                <p>03</p>
+            </div>
+            <div class="button-adaptiv">
+                <a href="./adaptivzavka.html"><input type="button" value="Получить консультацию"></a>
+            </div>
+        </div>
+        <div class="containers-adaptiv__two-block" id="twoblockadaptiv">
+            <div class="containers-adaptiv__two-block-body">
+                <h1>О НАС</h1>
+                <img src="./image/adaptiv/two-block/twoblockpng.png" alt="">
+                <p>Сплочённость команды <br> профессионалов позволила <br> расправить крылья</p>
+                <span class="containers-adaptiv__two-block-body-span1">Противоположная точка зрения<br> подразумевает, что интерактивные<br> прототипы, инициированные исключительно синтетически,<br> превращены в посмешище, хотя само их<br> существование приносит несомненную<br> пользу обществу.
+                    <br><br>
+                    В частности, перспективное<br> планирование предопределяет высокую <br>востребованность инновационных <br>методов управления процессами.
+                    <br><br>
+                    А ещё ключевые особенности структуры<br> проекта представляют собой не что <br>иное, как квинтэссенцию победы<br> маркетинга над разумом и должны быть<br> подвергнуты целой серии независимых<br> исследований.
+                </span>
+            </div>
+            <img  class="containers-adaptiv__two-block-strelka" src="./image/adaptiv/two-block/Ellipse 17.png" alt="">
+        </div>
+        <div class="containers-adaptiv__three-block">
+            <img src="./image/adaptiv/thre-block/1znak.png" alt="">
+            <p>Гарантия на все виды работ</p>
+            <img src="./image/adaptiv/thre-block/2znak.png" alt="">
+            <p>В работе используются материалы <br> от ведущих европейских<br> производителей</p>
+            <img src="./image/adaptiv/thre-block/3znak.png" alt="">
+            <p>Высококвалифицированный <br>
+                персонал</p>
+            <img src="./image/adaptiv/thre-block/4znak.png" alt="">
+            <p>Своя лаборатория цветоподбора</p>
+        </div>
+        <div class="containers-adaptiv__four-block" id="fourblockadaptiv">
+            <div class="containers-adaptiv__four-block-h1">
+                <h1>ВИДЫ УСЛУГ</h1>
+            </div>
+            <div class="containers-adaptiv__four-block-slider">
+                        <div id="carousel-adaptiv__four-block" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators" style="
+                            TOP: 530PX;">
+                                <button type="button" data-bs-target="#carousel-adaptiv__four-block" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="width: 37px;
+                                height: 4px;"></button>
+                                <button type="button" data-bs-target="#carousel-adaptiv__four-block" data-bs-slide-to="1" aria-label="Slide 2" style="width: 37px;
+                                height: 4px;"></button>
+                                <button type="button" data-bs-target="#carousel-adaptiv__four-block" data-bs-slide-to="2" aria-label="Slide 3" style="width: 37px;
+                                height: 4px;"></button>
+                                <button type="button" data-bs-target="#carousel-adaptiv__four-block" data-bs-slide-to="3" aria-label="Slide 4" style="width: 37px;
+                                height: 4px;"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <div class="card1 ">
+                                        <div class="cardBack">
+                                            <div class="cardo">
+                                                <div class="card_icon"><img src="./image/four-block/cards/photocard1.png" alt=""></div>
+                                                <div class="cardText">
+                                                    Реставрация <br>
+                                                    лакокрасочного<br>
+                                                    покрытия
+                                                </div> 
+                                                <div class="cardStrelka"></div>
+                                            </div>
+                                        </div>
+                                        <a href="./adaptivzavka.html"><div class="card--hover" >
+                                            <p class="card--hover-text">Получить<br>консультацию</p>
+                                            <div class="card--hover-strelka"></div>
+                                        </div></a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <div class="card2 ">
+                                        <div class="cardBack">
+                                            <div class="cardo">
+                                                <div class="card_icon"><img src="./image/four-block/cards/photocard2.png" alt=""></div>
+                                                <div class="cardText">
+                                                    Профессиональная <br>
+                                                    окраска<br>
+                                                    на объекте
+                                                </div> 
+                                                <div class="cardStrelka"></div>
+                                            </div>
+                                        </div>
+                                        <a href="./adaptivzavka.html"><div class="card--hover" >
+                                            <p class="card--hover-text">Получить<br>консультацию</p>
+                                            <div class="card--hover-strelka"></div>
+                                        </div></a>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <div class="card3 ">
+                                        <div class="cardBack">
+                                            <div class="cardo">
+                                                <div class="card_icon"><img src="./image/four-block/cards/photocard3.png" alt=""></div>
+                                                <div class="cardText">
+                                                    Профессиональная<br>
+                                                    окраска<br>
+                                                    экстерьера
+                                                </div> 
+                                                <div class="cardStrelka"></div>
+                                            </div>
+                                        </div>
+                                        <a href="./adaptivzavka.html"><div class="card--hover" >
+                                            <p class="card--hover-text">Получить<br>консультацию</p>
+                                            <div class="card--hover-strelka"></div>
+                                        </div></a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000" >
+                                    <div class="card4 ">
+                                        <div class="cardBack">
+                                            <div class="cardo">
+                                                <div class="card_icon"><img src="./image/four-block/cards/photocard4.png" alt=""></div>
+                                                <div class="cardText">
+                                                    Профессиональная<br>
+                                                    окраска ограждений<br>
+                                                    и витражей
+                                                </div> 
+                                                <div class="cardStrelka"></div>
+                                            </div>
+                                        </div>
+                                        <a href="./adaptivzavka.html"><div class="card--hover" >
+                                            <p class="card--hover-text">Получить<br>консультацию</p>
+                                            <div class="card--hover-strelka"></div>
+                                        </div></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                </div>  
+                  
+            </div>
+            <div class="containers-adaptiv__four-block-number">
+                <p>01</p>
+                <p>03</p>
+            </div>
+        </div>
+        <div class="containers-adaptiv__five-block">
+            <div class="containers-adaptiv__five-block-h1">
+                <h1>нам доверяют</h1>
+            </div>
+            <div class="containers-adaptiv__five-block-items">
+                <div class="item_adaptiv__five-block"><img src="./image/five-block/fond.png" alt="" style="width: 189.19px;height: 32.16px;"></div>
+                <div class="item_adaptiv__five-block"><img src="./image/five-block/rzd.png" alt="" style="width: 189.19px;height: 30.12px;"></div>
+                <div class="item_adaptiv__five-block"><img src="./image/five-block/ask.png" alt="" style="width: 174.05px;height: 79.46px;"></div>
+            </div>
+        </div>
+        <div class="containers-adaptiv__six-block" id="sixblockadaptiv">
+            <img class="containers-adaptiv__six-block-strelka" src="./image/adaptiv/six-block/Ellipse 17.png" alt="">
+            <div class="containers-adaptiv__six-block-h1">
+                <h1>Портфолио<br>
+                    работ</h1>
+            </div>
+            <div class="containers-adaptiv__six-block-slider">
+                <div class="containers-adaptiv__six-block-slider-number">
+                    <p>01</p>
+                    <p>03</p>
+                </div>
+                <div id="carouselsix-block" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators" style="top: 310px;">
+                      <button type="button" data-bs-target="#carouselsix-block" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="width: 51px;
+                      height: 4px;"></button>
+                      <button type="button" data-bs-target="#carouselsix-block" data-bs-slide-to="1" aria-label="Slide 2" style="width: 51px;
+                      height: 4px;"></button>
+                      <button type="button" data-bs-target="#carouselsix-block" data-bs-slide-to="2" aria-label="Slide 3" style="width: 51px;
+                      height: 4px;"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="containers-adaptiv__six-block-slider-item">
+                            <img class="containers-adaptiv__six-block-slider-item-img" src="./image/adaptiv/six-block/fiviblockimg1.png" alt="">
+                            <h1>Kazakov Grand Loft</h1>
+                            <p class="containers-adaptiv__six-block-slider-item-p">Kazakov Grand Loft — новый проект в исторической части Москвы, дом для тех, кто не идет на компромиссы. Все, на что город будет равняться в обозримой перспективе, находится здесь. И в центре этого мира вы. Индивидуальность даже в мелочах и комфорт, возведенный в абсолют — чем не рецепт совершенства?<br><br>
+                    
+                                Проект прогрессивной авторской архитектуры, умного наполнения и персональных панорамных видов на город. Здесь созданы условия премиального сервиса, чтобы вы не отвлекались на бытовые мелочи, а просто наслаждались жизнью.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <div class="containers-adaptiv__six-block-slider-item" >
+                            <img class="containers-adaptiv__six-block-slider-item-img" src="./image/adaptiv/six-block/fiveblockimg2.png" alt="">
+                            <h1>Новое здание Третьяковской <br> галереи</h1>
+                            <p class="containers-adaptiv__six-block-slider-item-p p2" style="margin-top:30px;">Третьяковская галерея на Кадашёвской<br>
+                                набережной — строящийся новый корпус <br>
+                                 Третьяковской галереи, расположенный<br>
+                               на Кадашёвской набережной, 10 — рядом<br>
+                               с историческими зданиями музея в Лаврушинском переулке.<br><br>
+                               
+                               Новый музейный корпус спроектирован <br>
+                               «Моспроектом-4» и дополнен конкурсным<br>
+                                проектом фасадов от архитектурного бюро SPEECH.<br><br>
+                               
+                               Строительство началось летом 2014 года,<br>
+                                завершение работ запланировано на 2024 год.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <div class="containers-adaptiv__six-block-slider-item">
+                            <img class="containers-adaptiv__six-block-slider-item-img" src="./image/adaptiv/six-block/fiveblockimg3.png" alt="">
+                            <h1>ТРЦ Павелецкая Плаза</h1>
+                            <p class="containers-adaptiv__six-block-slider-item-p p3">
+                                ТРЦ «Павелецкая Плаза» расположится
+                                в историческом центре Москвы, на первой линии Садового кольца, на площади перед Павелецким вокзалом. Торговый центр будет соединен подземным переходом через Садовое кольцо с радиальной станцией метро «Павелецкая», а также одноименным ТПУ, который свяжет транспортные артерии города с аэропортом «Домодедово».
+                                <br><br>
+                                
+                                Ежедневный пассажиропоток через станции метро и наземный транспорт составляет около 300 тыс. человек. В зоне охвата торгового центра живут и работают более 3 млн человек.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="containers-adaptiv__seven-block" id="sevenblockadaptiv">
+            <h1>Оставьте<br>
+                заявку</h1>
+                <input class="containers-adaptiv__seven-block-name" type="text" placeholder="Ваше имя">
+                <input class="containers-adaptiv__seven-block-tel" type="text" placeholder="Номер телефона*">
+                <textarea class="containers-adaptiv__seven-block-textArea" name="" id=""  placeholder="Ваше сообщение"></textarea>
+                <div class="containers-adaptiv__seven-block-check-box">
+                    <input name="cssCheckbox1" id="demo_opt_adaptive_block_eight" type="checkbox" class="css-checkbox1">
+                        <label for="demo_opt_adaptive_block_eight"></label>
+                    <p>Нажимая кнопку «ОТПРАВИТЬ» <br> вы соглашаетесь на обработку ваших данных</p>
+                </div>
+                <input class="containers-adaptiv__seven-block-button" type="button" value="Отправить">
+        </div>
+        <div class="containers-adaptiv__eath-block" id="eathblockadaptiv">
+            <h1 class="containers-adaptiv__eath-block-h1">Контакты</h1>
+            <div class="containers-adaptiv__eath-block-item">
+                <img src="./image/adaptiv/eath-block/tochka.svg" alt="">
+                <h1>г. Москва</h1>
+                <p>ул. Московская д.0</p>
+            </div>
+            <div class="containers-adaptiv__eath-block-item">
+                <img src="./image/adaptiv/eath-block/tel.svg" alt="">
+                <h1>+7 900 000 00 00</h1>
+                <p style="text-decoration-line: underline;">заказать звонок</p>
+            </div>
+            <div class="containers-adaptiv__eath-block-item">
+                <img src="./image/adaptiv/eath-block/clock.svg" alt="">
+                <h1>Пн-Вс 9:00-20:00</h1>
+                <p>без выходных</p>
+
+            </div>
+            <div class="containers-adaptiv__eath-block-social">
+                <img src="./image/adaptiv/eath-block/vk.png" alt="">
+                <img src="./image/adaptiv/eath-block/tg.png" alt="">
+                <img src="./image/adaptiv/eath-block/wt.png" alt="">
+                    <img src="./image/adaptiv/eath-block/vb.png" alt="">
+            </div>
+            <p class="containers-adaptiv__eath-block-politica">Политика конфиденциальности</p>
+            <div class="containers-adaptiv__eath-block-map">
+                <iframe class="adaptiv_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9795.235651383882!2d131.90122316131524!3d43.122564476177615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb392110c195f89%3A0x2ff2f6c519c723fc!2z0KTQk9CR0J7QoyDQktCeICLQktC70LDQtNC40LLQvtGB0YLQvtC60YHQutC40Lkg0LPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INGD0L3QuNCy0LXRgNGB0LjRgtC10YIg0Y3QutC-0L3QvtC80LjQutC4INC4INGB0LXRgNCy0LjRgdCwIg!5e0!3m2!1sru!2sru!4v1682514447087!5m2!1sru!2sru" width="280" height="280" style="border:15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footer_adaptiv">
+            <img class="footer-logo-adaptiv" src="./image/adaptiv/footer/logofooter.png" alt="">
+            <p>Реставрация (восстановление) <br> лакокрасочного покрытия на объекте <br> (окна, двери), профессиональная<br>  окраска на объекте (окна, двери,<br>  предметы интерьера и экстерьера,<br>  ограждения, витражи и т.д.)</p>
+            <span class="politika_footer"><a href="">Политика конфиденциальности</a></span>
+            <h1>СитиПро 2023</h1>
+            <img class="footer-img" src="./image/adaptiv/footer/razrabot.png" alt="">
+        </div>
+     </div>
+     <!-- Кнопка навигации -->
+     <div class="btn-up btn-up_hide"><img class="strelka_img" src="./image/strelka.png" alt=""></div>
+    <!--JS-->
+    <script src="./js/main.js"></script> <!--Основной JS-->
+    <script src="./js/bootstrap.bundle.min.js"></script> <!--BootstrapJS-->
+    <script src="./js/adaptiv.js"></script> <!--Adaptiv JS  -->
+</body>
+</html>

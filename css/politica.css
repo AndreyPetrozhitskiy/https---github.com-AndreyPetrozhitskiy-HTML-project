@@ -1,0 +1,34 @@
+.politica-block{
+    position: relative;
+    min-width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: visible;
+    flex-wrap: wrap;
+}
+.politica-block2{
+    position: relative;
+    min-width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: visible;
+    flex-wrap: wrap;
+    margin-bottom: 95PX;
+    margin-top: 50PX;
+}
+.politica-block2 p{
+    display: block;
+    width: 1030px;
+    height: fit-content;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+
+    color: #272727;
+}
